@@ -1,0 +1,37 @@
+# Unity generated files and machine-specific settings
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Bb]uild/
+/[Bb]uilds/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+
+# IDE and local tooling
+/.vs/
+/.idea/
+/.vscode/
+/.codex/
+/.agents/
+/.mcp.json
+/*.csproj
+/*.sln
+/*.slnx
+/*.suo
+/*.user
+/*.userprefs
+/*.pidb
+/*.opendb
+/*.VC.db
+
+# Local verification output
+/WhiteboxReports/
+
+# Local credentials and OS metadata
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db

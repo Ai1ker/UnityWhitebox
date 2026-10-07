@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Whitebox/Scenes/MainMenu.unity
+    guid: a99c91e41e6d0c047b0dd2c6d264d557
+  - enabled: 1
+    path: Assets/Whitebox/Scenes/Level01_Whitebox.unity
+    guid: 5666253108a870649aa34d2349eec99d
+  - enabled: 1
+    path: Assets/Whitebox/Scenes/Level02_Blank.unity
+    guid: 4bd7690c7e8f88445b26ac936a798412
+  - enabled: 1
+    path: Assets/Whitebox/Scenes/Level03_Blank.unity
+    guid: 05a84d54d3f134f9dc43ffe2d3c2e93d
+  - enabled: 1
+    path: Assets/Whitebox/Scenes/Level04_Blank.unity
+    guid: 75db4a1b9246b5343aa6c984b939fb75
+  - enabled: 1
+    path: Assets/Whitebox/Scenes/Level05_Blank.unity
+    guid: dd91e8b821f47044ebef306761d8170a
+  - enabled: 1
+    path: Assets/Whitebox/Scenes/Level06_Blank.unity
+    guid: 34cb6c711e2402b45b70b613fda14d30
+  - enabled: 1
+    path: Assets/Whitebox/Scenes/GameEnd.unity
+    guid: 1d62be1dbde9fa94785c30c6e116959c
+  m_configObjects:
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
