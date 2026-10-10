@@ -1,0 +1,374 @@
+fileFormatVersion: 2
+guid: c333741abb2aec245a0a0d8dcf324dc2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2167945522881639701
+    second: lab-mechanism-layers_0
+  - first:
+      213: -5985951297411927642
+    second: lab-mechanism-layers_1
+  - first:
+      213: -3972312346594625556
+    second: lab-mechanism-layers_2
+  - first:
+      213: -2674127673227148800
+    second: lab-mechanism-layers_3
+  - first:
+      213: 4170566142019944475
+    second: lab-mechanism-layers_4
+  - first:
+      213: -7634762956107342206
+    second: lab-mechanism-layers_5
+  - first:
+      213: 6440188060188873223
+    second: lab-mechanism-layers_6
+  - first:
+      213: 5752898205679669939
+    second: lab-mechanism-layers_7
+  - first:
+      213: -9149593087864331002
+    second: lab-mechanism-layers_8
+  - first:
+      213: -435800636978936696
+    second: lab-mechanism-layers_9
+  - first:
+      213: 1643195641634762723
+    second: lab-mechanism-layers_10
+  - first:
+      213: -7786120994781039738
+    second: lab-mechanism-layers_11
+  - first:
+      213: -1733940702662277125
+    second: lab-mechanism-layers_12
+  - first:
+      213: -3274336669528191340
+    second: lab-mechanism-layers_13
+  - first:
+      213: -8941253541506825994
+    second: lab-mechanism-layers_14
+  - first:
+      213: -7671208003839358952
+    second: lab-mechanism-layers_15
+  - first:
+      213: 8211150266348907823
+    second: lab-mechanism-layers_16
+  - first:
+      213: -2575172206827155385
+    second: lab-mechanism-layers_17
+  - first:
+      213: 2587431646469171506
+    second: lab-mechanism-layers_18
+  - first:
+      213: -2408294650845447822
+    second: lab-mechanism-layers_19
+  - first:
+      213: -2758528790919363697
+    second: lab-mechanism-layers_20
+  - first:
+      213: -5338232767842365294
+    second: lab-mechanism-layers_21
+  - first:
+      213: 3803533121637246220
+    second: lab-mechanism-layers_22
+  - first:
+      213: -5329767383942891182
+    second: lab-mechanism-layers_23
+  - first:
+      213: 4298344387778598089
+    second: lab-mechanism-layers_24
+  - first:
+      213: -5978136935876462309
+    second: lab-mechanism-layers_25
+  - first:
+      213: 4007488555872622675
+    second: lab-mechanism-layers_26
+  - first:
+      213: 1210798172786563736
+    second: lab-mechanism-layers_27
+  - first:
+      213: 6301467509583050485
+    second: lab-mechanism-layers_28
+  - first:
+      213: -2966257137770502081
+    second: lab-mechanism-layers_29
+  - first:
+      213: -4081889740925026321
+    second: lab-mechanism-layers_30
+  - first:
+      213: -5762616176288942418
+    second: lab-mechanism-layers_31
+  - first:
+      213: 3366512947171551156
+    second: lab-mechanism-layers_32
+  - first:
+      213: 8313161899409922762
+    second: lab-mechanism-layers_33
+  - first:
+      213: -6128794987410969322
+    second: lab-mechanism-layers_34
+  - first:
+      213: 8638594888335127808
+    second: lab-mechanism-layers_35
+  - first:
+      213: -6895246663029336742
+    second: lab-mechanism-layers_36
+  - first:
+      213: 2838909334679837634
+    second: lab-mechanism-layers_37
+  - first:
+      213: -740449792507536129
+    second: lab-mechanism-layers_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 274
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LabDoor_Shell
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 934
+        width: 178
+        height: 551
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 36, y: 45, z: 36, w: 45}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf6458c2ab213254cb3eee105292d11a
+      internalID: -778860417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LabDoor_Light
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 934
+        width: 178
+        height: 551
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 36, y: 45, z: 36, w: 45}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a1f102b44eb0cf478eea819c12914a5
+      internalID: 1873089102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LabPlate_Shell
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 677
+        width: 436
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 72, y: 12, z: 72, w: 12}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddcac8fe4a1bb714584707a4fab7a20d
+      internalID: 437477603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LabPlate_Light
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 677
+        width: 436
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 72, y: 12, z: 72, w: 12}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d1ba6671cc0c8e4a9c10e761390ba40
+      internalID: 386355109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LabReceiver_Shell
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 138
+        width: 376
+        height: 365
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0841037cdb03524cbbc3ce21761fc5c
+      internalID: 860693437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LabReceiver_Light
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 138
+        width: 376
+        height: 365
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bd0fd1bc6dc53f46aded81ac1ecdfb1
+      internalID: -746517233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4b828467b78f6444485c25f0b33f5e20
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      LabDoor_Light: 1873089102
+      LabDoor_Shell: -778860417
+      LabPlate_Light: 386355109
+      LabPlate_Shell: 437477603
+      LabReceiver_Light: -746517233
+      LabReceiver_Shell: 860693437
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

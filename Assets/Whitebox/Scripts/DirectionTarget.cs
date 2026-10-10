@@ -33,6 +33,8 @@ namespace VectorWhitebox
         {
             originalGravityDirection = gravityDirection;
             originalGravityAcceleration = gravityAcceleration;
+            if (!isPlayer && !GetComponent<WhiteboxBullet>() && !GetComponent<CrateScrapeAudio>())
+                gameObject.AddComponent<CrateScrapeAudio>();
         }
         void OnEnable() { speedLimitRoutine = StartCoroutine(LimitSpeedAfterPhysics()); }
         void OnDisable()

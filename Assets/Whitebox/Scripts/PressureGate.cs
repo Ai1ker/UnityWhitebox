@@ -17,6 +17,7 @@ namespace VectorWhitebox
         public bool showResetBoundary = true;
         Vector2 cubeSpawn;
         LineRenderer resetBoundary;
+        bool soundReady;
         void Awake()
         {
             if (!cube) return;
@@ -41,6 +42,7 @@ namespace VectorWhitebox
                 new Vector3(left, bottom), new Vector3(right, bottom),
                 new Vector3(right, top), new Vector3(left, top)
             });
+            BoundaryOutlineGlow.Ensure(resetBoundary);
         }
         void OnDrawGizmosSelected()
         {
@@ -70,14 +72,19 @@ namespace VectorWhitebox
         void FixedUpdate()
         {
             if (!cube || !doorCollider || !doorVisual || !plateVisual) return;
+            bool announceChanges = soundReady;
+            soundReady = true;
             // Contact activates either a floor or ceiling plate, regardless of skill use.
             if (!Latched)
             {
                 GetPlateBox(out Vector2 center, out Vector2 size, out float angle, out Vector2 normal);
                 foreach (var c in Physics2D.OverlapBoxAll(center, size + Vector2.one * .12f, angle))
-                    if (c.GetComponent<DirectionTarget>() == cube) { Latch(center, size, normal); break; }
+                    if (c.GetComponent<DirectionTarget>() == cube) { Latch(center, size, normal, announceChanges); break; }
             }
+            bool wasOpen = Open;
             Open = Latched; EverOpened |= Open;
+            if (announceChanges && Open != wasOpen && Application.isPlaying)
+                LaboratoryAudio.Play(Open ? LaboratorySound.DoorOpen : LaboratorySound.DoorClose, doorVisual.transform.position);
             // Never close the door collider through the player.
             var game = WhiteboxGame.Instance;
             bool occupied = game && game.player && game.player.shape.bounds.Intersects(doorVisual.bounds);
@@ -98,7 +105,7 @@ namespace VectorWhitebox
             angle = Mathf.Atan2(right.y, right.x) * Mathf.Rad2Deg;
             normal = (Vector2)up.normalized;
         }
-        void Latch(Vector2 plateCenter, Vector2 plateSize, Vector2 normal)
+        void Latch(Vector2 plateCenter, Vector2 plateSize, Vector2 normal, bool announceChanges)
         {
             var body = cube.Body;
             Vector2 cubeExtents = cube.GetComponent<Collider2D>().bounds.extents;
@@ -112,11 +119,14 @@ namespace VectorWhitebox
             body.simulated = false;
             cube.transform.position = new Vector3(socket.x, socket.y, cube.transform.position.z);
             Latched = true;
+            if (announceChanges && Application.isPlaying)
+                LaboratoryAudio.Play(LaboratorySound.PressurePlate, plateVisual.transform.position);
         }
         public void Unlatch()
         {
             Latched = false;
             Open = false;
+            soundReady = false;
             if (cube) cube.Body.simulated = true;
         }
         public void ResetPuzzle()

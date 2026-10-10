@@ -28,13 +28,15 @@ namespace VectorWhitebox
             if (!game || game.Dead || game.Completed) return false;
             if (requireTurretDefeated)
                 foreach (var turret in FindObjectsByType<WhiteboxTurret>())
-                    if (!turret.destroyed) { game.Message("先摧毁炮塔，再进入终点"); return false; }
+                    if (!turret.destroyed) { game.Message("先摧毁炮塔，再进入终点", "Destroy the turrets before entering the final exit."); return false; }
             if (requireAllGatesOpen)
                 foreach (var gate in FindObjectsByType<PressureGate>())
-                    if (!gate.Open) { game.Message("先打开所有感应门，再进入终点"); return false; }
+                    if (!gate.Open) { game.Message("先打开所有感应门，再进入终点", "Open all sensor doors before entering the final exit."); return false; }
             entered = true;
             game.BeginExit();
             WhiteboxFrontend.ShowEnding(endingMenuPrefab);
+            if (Application.isPlaying && (SceneFadeTransition.IsTransitioning || WhiteboxFrontend.IsEndingOpen))
+                LaboratoryAudio.Play(LaboratorySound.Portal, transform.position);
             return true;
         }
     }

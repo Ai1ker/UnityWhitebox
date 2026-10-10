@@ -90,6 +90,7 @@ namespace VectorWhitebox
             corners[0] = new Vector3(-x, -y, -.05f); corners[1] = new Vector3(x, -y, -.05f);
             corners[2] = new Vector3(x, y, -.05f); corners[3] = new Vector3(-x, y, -.05f);
             outline.SetPositions(corners);
+            BoundaryOutlineGlow.Ensure(outline);
         }
         void OnDrawGizmos()
         {

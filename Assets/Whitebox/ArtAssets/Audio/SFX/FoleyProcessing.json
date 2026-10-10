@@ -1,0 +1,130 @@
+{
+  "Footstep_01": {
+    "seconds": 0.17800453514739228,
+    "peak": 0.26,
+    "rms": 0.03122043656395371,
+    "seam": 0.0
+  },
+  "Footstep_02": {
+    "seconds": 0.18600907029478458,
+    "peak": 0.26,
+    "rms": 0.03299466657474135,
+    "seam": 0.0
+  },
+  "Footstep_03": {
+    "seconds": 0.17,
+    "peak": 0.26,
+    "rms": 0.035511135203334765,
+    "seam": 0.0
+  },
+  "Footstep_04": {
+    "seconds": 0.17800453514739228,
+    "peak": 0.26,
+    "rms": 0.032523920379748335,
+    "seam": 0.0
+  },
+  "Footstep_05": {
+    "seconds": 0.18600907029478458,
+    "peak": 0.26,
+    "rms": 0.03344591407451073,
+    "seam": 0.0
+  },
+  "Footstep_06": {
+    "seconds": 0.17,
+    "peak": 0.26,
+    "rms": 0.034108057599042785,
+    "seam": 0.0
+  },
+  "Jump": {
+    "seconds": 0.21,
+    "peak": 0.31,
+    "rms": 0.05286946012045623,
+    "seam": 0.0
+  },
+  "SkillVelocity": {
+    "seconds": 0.52,
+    "peak": 0.48,
+    "rms": 0.10336701489759569,
+    "seam": 0.0,
+    "electronic_layer_db": -16
+  },
+  "SkillGravity": {
+    "seconds": 0.73,
+    "peak": 0.5,
+    "rms": 0.1434541764034906,
+    "seam": 0.0,
+    "electronic_layer_db": -15
+  },
+  "PlayerDeath": {
+    "seconds": 1.2,
+    "peak": 0.62,
+    "rms": 0.09267092941636908,
+    "seam": 0.0
+  },
+  "TurretAim": {
+    "seconds": 4.6,
+    "peak": 0.24,
+    "rms": 0.04780691140433206,
+    "seam": 0.0011291848506118987
+  },
+  "TurretFire": {
+    "seconds": 0.33,
+    "peak": 0.57,
+    "rms": 0.1409896847182891,
+    "seam": 0.0
+  },
+  "BulletHitPlayer": {
+    "seconds": 0.36,
+    "peak": 0.58,
+    "rms": 0.13680970445913795,
+    "seam": 0.0
+  },
+  "BulletHitWall": {
+    "seconds": 0.31,
+    "peak": 0.55,
+    "rms": 0.06994785427407572,
+    "seam": 0.0
+  },
+  "Checkpoint": {
+    "seconds": 0.4,
+    "peak": 0.46,
+    "rms": 0.05277618059513342,
+    "seam": 0.0
+  },
+  "PressurePlate": {
+    "seconds": 0.28,
+    "peak": 0.48,
+    "rms": 0.13529698151341057,
+    "seam": 0.0
+  },
+  "BulletSwitch": {
+    "seconds": 0.28,
+    "peak": 0.47,
+    "rms": 0.0641297440239904,
+    "seam": 0.0
+  },
+  "DoorOpen": {
+    "seconds": 1.02,
+    "peak": 0.48,
+    "rms": 0.12232387246064808,
+    "seam": 0.0
+  },
+  "DoorClose": {
+    "seconds": 0.92,
+    "peak": 0.5,
+    "rms": 0.13714252293320875,
+    "seam": 0.0
+  },
+  "Portal": {
+    "seconds": 1.4,
+    "peak": 0.54,
+    "rms": 0.08965583570924701,
+    "seam": 0.0
+  },
+  "CrateScrape": {
+    "seconds": 5.8,
+    "peak": 0.45,
+    "rms": 0.10261220475630978,
+    "seam": 0.004058961760307626
+  }
+}

@@ -10,6 +10,7 @@ namespace VectorWhitebox
     {
         static readonly Key[] defaults = { Key.A, Key.D, Key.W, Key.Space, Key.S, Key.Digit1, Key.Digit2 };
         static readonly string[] names = { "向左移动", "向右移动", "跳跃", "备用跳跃", "向下 / 下穿", "技能 1", "技能 2" };
+        static readonly string[] englishNames = { "Move left", "Move right", "Jump", "Alternate jump", "Down / drop through", "Skill 1", "Skill 2" };
         static readonly Key[] bindings = new Key[defaults.Length];
         static bool loaded;
         const string PrefPrefix = "VectorWhitebox.Key.";
@@ -29,12 +30,12 @@ namespace VectorWhitebox
             }
         }
 
-        public static string Name(WhiteboxAction action) => names[(int)action];
+        public static string Name(WhiteboxAction action) => WhiteboxLocalization.Text(names[(int)action], englishNames[(int)action]);
         public static Key Binding(WhiteboxAction action) { Load(); return bindings[(int)action]; }
         public static string Display(WhiteboxAction action) => Display(Binding(action));
         public static string Display(Key key)
         {
-            if (key == Key.Space) return "空格";
+            if (key == Key.Space) return WhiteboxLocalization.Text("空格", "Space");
             if (key >= Key.Digit1 && key <= Key.Digit9) return ((int)key - (int)Key.Digit1 + 1).ToString();
             if (key == Key.Digit0) return "0";
             return key.ToString();
@@ -45,17 +46,24 @@ namespace VectorWhitebox
 
         public static bool TryBind(WhiteboxAction action, Key key, out string error)
         {
-            Load();
-            if (!Enum.IsDefined(typeof(Key), key) || key == Key.None || key == Key.Escape)
-            { error = "Esc 保留给暂停菜单，请选择其他键。"; return false; }
-            for (int i = 0; i < bindings.Length; i++)
-                if (i != (int)action && bindings[i] == key)
-                { error = Display(key) + " 已用于「" + names[i] + "」。"; return false; }
+            error = BindingError(action, key);
+            if (error != null) return false;
             bindings[(int)action] = key;
             PlayerPrefs.SetInt(PrefPrefix + (int)action, (int)key);
             PlayerPrefs.Save();
-            error = null;
             return true;
+        }
+
+        /// <summary>Pure validation shared by binding and language-aware error messages.</summary>
+        public static string BindingError(WhiteboxAction action, Key key)
+        {
+            Load();
+            if (!Enum.IsDefined(typeof(Key), key) || key == Key.None || key == Key.Escape)
+                return WhiteboxLocalization.Text("Esc 保留给暂停菜单，请选择其他键。", "Esc opens the pause menu. Choose another key.");
+            for (int i = 0; i < bindings.Length; i++)
+                if (i != (int)action && bindings[i] == key)
+                    return WhiteboxLocalization.Format("{0} 已用于「{1}」。", "{0} is already assigned to {1}.", Display(key), Name((WhiteboxAction)i));
+            return null;
         }
 
         public static void ResetDefaults()

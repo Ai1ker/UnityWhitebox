@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace VectorWhitebox
 {
@@ -71,6 +72,7 @@ namespace VectorWhitebox
         public static void StartNewGame()
         {
             ClearResumeRequest();
+            LevelUnlockProgress.ResetProgress();
             PlayerPrefs.DeleteKey(SaveKey);
             PlayerPrefs.Save();
         }
@@ -79,7 +81,8 @@ namespace VectorWhitebox
         public static string RequestContinue()
         {
             ClearResumeRequest();
-            if (!TryGetSavedProgress(out var progress) || !Application.CanStreamedLevelBeLoaded(progress.sceneName)) return null;
+            if (!TryGetSavedProgress(out var progress) || !Application.CanStreamedLevelBeLoaded(progress.sceneName)
+                || !LevelUnlockProgress.IsUnlocked(progress.sceneName)) return null;
             pendingResume = progress;
             return progress.sceneName;
         }
@@ -101,6 +104,7 @@ namespace VectorWhitebox
         public static void MarkFinished()
         {
             ClearResumeRequest();
+            LevelUnlockProgress.MarkLevelCompleted(SceneManager.GetActiveScene().path);
             if (!TryGetSavedProgress(out var progress)) return;
             progress.finished = true;
             Write(progress);

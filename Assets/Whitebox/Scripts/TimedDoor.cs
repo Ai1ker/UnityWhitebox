@@ -19,15 +19,21 @@ namespace VectorWhitebox
 
         void Update()
         {
-            if (Active && WhiteboxGame.GameplayTime >= activeUntil) Active = false;
+            if (Active && WhiteboxGame.GameplayTime >= activeUntil)
+            {
+                Active = false;
+                if (Application.isPlaying) LaboratoryAudio.Play(LaboratorySound.DoorClose, transform.position);
+            }
             ApplyState();
         }
 
         public void OpenFor(float seconds)
         {
+            bool wasActive = Active;
             Active = true;
             activeUntil = WhiteboxGame.GameplayTime + Mathf.Max(.1f, seconds);
             ApplyState();
+            if (!wasActive && Application.isPlaying) LaboratoryAudio.Play(LaboratorySound.DoorOpen, transform.position);
         }
 
         public void ResetDoor()

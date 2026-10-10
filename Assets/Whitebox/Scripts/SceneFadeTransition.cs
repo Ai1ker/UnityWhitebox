@@ -11,6 +11,7 @@ namespace VectorWhitebox
         float black;
         string chapter;
         Font font;
+        GUIStyle chapterStyle, captionStyle;
         public static void Travel(string sceneName)
         {
             StartTransition(sceneName, -1);
@@ -27,17 +28,17 @@ namespace VectorWhitebox
             {
                 switch (level)
                 {
-                    case 1: return "第一关";
-                    case 2: return "第二关";
-                    case 3: return "第三关";
-                    case 4: return "第四关";
-                    case 5: return "第五关";
-                    case 6: return "第六关";
-                    default: return "第 " + level + " 关";
+                    case 1: return WhiteboxLocalization.Text("第一关", "Level 1");
+                    case 2: return WhiteboxLocalization.Text("第二关", "Level 2");
+                    case 3: return WhiteboxLocalization.Text("第三关", "Level 3");
+                    case 4: return WhiteboxLocalization.Text("第四关", "Level 4");
+                    case 5: return WhiteboxLocalization.Text("第五关", "Level 5");
+                    case 6: return WhiteboxLocalization.Text("第六关", "Level 6");
+                    default: return WhiteboxLocalization.Format("第 {0} 关", "Level {0}", level);
                 }
             }
-            if (name == "MainMenu") return "主菜单";
-            return name == "GameEnd" ? "游戏结束" : name;
+            if (name == "MainMenu") return WhiteboxLocalization.Text("主菜单", "Main Menu");
+            return name == "GameEnd" ? WhiteboxLocalization.Text("游戏结束", "Game Complete") : name;
         }
         static void StartTransition(string sceneName, int buildIndex)
         {
@@ -51,7 +52,7 @@ namespace VectorWhitebox
         {
             font = Font.CreateDynamicFontFromOSFont(new[] { "Microsoft YaHei", "Noto Sans CJK SC", "Arial" }, 32);
             yield return Fade(0, 1, .65f);
-            chapter = GetSceneTitle(sceneName);
+            chapter = sceneName;
             if (buildIndex >= 0) SceneManager.LoadScene(buildIndex);
             else SceneManager.LoadScene(sceneName);
             yield return null;
@@ -69,19 +70,38 @@ namespace VectorWhitebox
         void OnGUI()
         {
             if (black <= .001f) return;
+            int beforeDepth = GUI.depth;
             GUI.depth = -1000;
             Color before = GUI.color;
-            GUI.color = new Color(.015f, .025f, .045f, black);
-            GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), Texture2D.whiteTexture);
+            Matrix4x4 beforeMatrix = GUI.matrix;
+            GUI.matrix = Matrix4x4.identity;
+            GUI.color = Color.white;
+            LaboratoryUiTheme.Fill(new Rect(0, 0, Screen.width, Screen.height), FadeColor(LaboratoryUiTheme.Ink, black));
             if (!string.IsNullOrEmpty(chapter))
             {
-                var style = new GUIStyle(GUI.skin.label) { alignment = TextAnchor.MiddleCenter, fontSize = Mathf.RoundToInt(32 * Mathf.Min(Screen.width / 1280f, Screen.height / 720f)), font = font };
-                style.normal.textColor = new Color(.7f, 1f, .88f, black);
-                GUI.color = Color.white;
-                GUI.Label(new Rect(0, Screen.height / 2f - 40, Screen.width, 80), chapter, style);
+                float scale = Mathf.Min(Screen.width / 1280f, Screen.height / 720f);
+                GUI.matrix = Matrix4x4.TRS(Vector3.zero, Quaternion.identity, Vector3.one * scale);
+                float w = Screen.width / scale, h = Screen.height / scale;
+                if (chapterStyle == null)
+                {
+                    chapterStyle = new GUIStyle(GUI.skin.label) { alignment = TextAnchor.MiddleCenter, fontSize = 32, font = font, padding = new RectOffset(0, 0, 0, 0) };
+                    chapterStyle.normal.textColor = LaboratoryUiTheme.Text;
+                    captionStyle = new GUIStyle(chapterStyle) { fontSize = 12 };
+                    captionStyle.normal.textColor = LaboratoryUiTheme.Muted;
+                }
+                Color line = FadeColor(LaboratoryUiTheme.Line, black * .45f);
+                LaboratoryUiTheme.DrawRule(new Rect(w / 2 - 182, h / 2 - 47, 153, 1), line);
+                LaboratoryUiTheme.DrawRule(new Rect(w / 2 + 29, h / 2 - 47, 153, 1), line);
+                LaboratoryUiTheme.DrawPanel(new Rect(w / 2 - 7, h / 2 - 54, 14, 14), Color.clear, FadeColor(LaboratoryUiTheme.Accent, black), 3);
+                GUI.color = new Color(1, 1, 1, black);
+                GUI.Label(new Rect(w / 2 - 240, h / 2 - 17, 480, 47), GetSceneTitle(chapter), chapterStyle);
+                GUI.Label(new Rect(w / 2 - 240, h / 2 + 47, 480, 22), WhiteboxLocalization.Text("Rotcev / 正在切换场景", "Rotcev / SCENE TRANSITION"), captionStyle);
             }
             GUI.color = before;
+            GUI.matrix = beforeMatrix;
+            GUI.depth = beforeDepth;
         }
+        static Color FadeColor(Color color, float alpha) { color.a = alpha; return color; }
         void OnDestroy()
         {
             if (instance == this) instance = null;

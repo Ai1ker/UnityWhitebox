@@ -1,0 +1,370 @@
+fileFormatVersion: 2
+guid: ec5e93e6ec79952418838df6b06e683d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6724379458362905219
+    second: lab-beacon-layers_0
+  - first:
+      213: -3053554350022027598
+    second: lab-beacon-layers_1
+  - first:
+      213: -8679357671851223783
+    second: lab-beacon-layers_2
+  - first:
+      213: -7903303687148010977
+    second: lab-beacon-layers_3
+  - first:
+      213: -759465609076310106
+    second: lab-beacon-layers_4
+  - first:
+      213: 4728712892415482167
+    second: lab-beacon-layers_5
+  - first:
+      213: -1257358946215122526
+    second: lab-beacon-layers_6
+  - first:
+      213: -5572821185721523255
+    second: lab-beacon-layers_7
+  - first:
+      213: 8758408692311438290
+    second: lab-beacon-layers_8
+  - first:
+      213: -2160299958980674997
+    second: lab-beacon-layers_9
+  - first:
+      213: 2162848826460518633
+    second: lab-beacon-layers_10
+  - first:
+      213: -3490830977331187002
+    second: lab-beacon-layers_11
+  - first:
+      213: -7457336443069118207
+    second: lab-beacon-layers_12
+  - first:
+      213: 6522522225686586126
+    second: lab-beacon-layers_13
+  - first:
+      213: -699896075215339824
+    second: lab-beacon-layers_14
+  - first:
+      213: -1748933991876268858
+    second: lab-beacon-layers_15
+  - first:
+      213: 4539330303145721728
+    second: lab-beacon-layers_16
+  - first:
+      213: -5623761298107619522
+    second: lab-beacon-layers_17
+  - first:
+      213: -5699122378823620406
+    second: lab-beacon-layers_18
+  - first:
+      213: -5688157956354389585
+    second: lab-beacon-layers_19
+  - first:
+      213: -3963889410377667862
+    second: lab-beacon-layers_20
+  - first:
+      213: -1823884110204335219
+    second: lab-beacon-layers_21
+  - first:
+      213: -8670590587451275727
+    second: lab-beacon-layers_22
+  - first:
+      213: 9080625131584765859
+    second: lab-beacon-layers_23
+  - first:
+      213: -8042429416798478469
+    second: lab-beacon-layers_24
+  - first:
+      213: 1696180168271275309
+    second: lab-beacon-layers_25
+  - first:
+      213: 303876326029724422
+    second: lab-beacon-layers_26
+  - first:
+      213: -2457138189159961893
+    second: lab-beacon-layers_27
+  - first:
+      213: 2421962178039055709
+    second: lab-beacon-layers_28
+  - first:
+      213: 8539636966704311259
+    second: lab-beacon-layers_29
+  - first:
+      213: 5035524121709406182
+    second: lab-beacon-layers_30
+  - first:
+      213: 6219887369494032083
+    second: lab-beacon-layers_31
+  - first:
+      213: -3824564026949835950
+    second: lab-beacon-layers_32
+  - first:
+      213: -2832519498031413093
+    second: lab-beacon-layers_33
+  - first:
+      213: -2343054094255094391
+    second: lab-beacon-layers_34
+  - first:
+      213: 3154588587354425399
+    second: lab-beacon-layers_35
+  - first:
+      213: 5114925994761791523
+    second: lab-beacon-layers_36
+  - first:
+      213: 5130838581378697118
+    second: lab-beacon-layers_37
+  - first:
+      213: 7130180592203099093
+    second: lab-beacon-layers_38
+  - first:
+      213: 8148072304990891444
+    second: lab-beacon-layers_39
+  - first:
+      213: 7315748404787603959
+    second: lab-beacon-layers_40
+  - first:
+      213: 2863927165521528554
+    second: lab-beacon-layers_41
+  - first:
+      213: -5324265362677387600
+    second: lab-beacon-layers_42
+  - first:
+      213: -1582068681173105866
+    second: lab-beacon-layers_43
+  - first:
+      213: 1416505258521427401
+    second: lab-beacon-layers_44
+  - first:
+      213: -5941189334363892603
+    second: lab-beacon-layers_45
+  - first:
+      213: 8235858941767523440
+    second: lab-beacon-layers_46
+  - first:
+      213: -8659324548213832543
+    second: lab-beacon-layers_47
+  - first:
+      213: -2180026327872844408
+    second: lab-beacon-layers_48
+  - first:
+      213: -8044534051542319445
+    second: lab-beacon-layers_49
+  - first:
+      213: 1459924408005332624
+    second: lab-beacon-layers_50
+  - first:
+      213: 3134716417916077091
+    second: lab-beacon-layers_51
+  - first:
+      213: -2312277940844814365
+    second: lab-beacon-layers_52
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 300
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LabPortal_Shell
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 630
+        width: 426
+        height: 564
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed8fcfa598a9f4c499f7cffec2f2c9b7
+      internalID: -459196930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LabPortal_Energy
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 630
+        width: 426
+        height: 564
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 703810f0d0e7d4d48b00960acdc717fa
+      internalID: -1651480334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LabCheckpoint_Shell
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 29
+        width: 479
+        height: 581
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90b88d5dcf76cbb4daafe0f90338cc79
+      internalID: -938982072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LabCheckpoint_Energy
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 29
+        width: 479
+        height: 581
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3da2513cad430604fa51a5476f0dccc4
+      internalID: 2116256536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f471d8be345077d41913d20c180c48ef
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      LabCheckpoint_Energy: 2116256536
+      LabCheckpoint_Shell: -938982072
+      LabPortal_Energy: -1651480334
+      LabPortal_Shell: -459196930
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

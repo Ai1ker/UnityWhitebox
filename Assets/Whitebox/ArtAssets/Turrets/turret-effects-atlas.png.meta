@@ -1,0 +1,656 @@
+fileFormatVersion: 2
+guid: f7853c80c36034e43aee5c8d40d3b20e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3956403157231055005
+    second: turret-effects-atlas_0
+  - first:
+      213: 3643766332427158739
+    second: turret-effects-atlas_1
+  - first:
+      213: -3226200739509890590
+    second: turret-effects-atlas_2
+  - first:
+      213: 4497712797686207428
+    second: turret-effects-atlas_3
+  - first:
+      213: -130814791249009809
+    second: turret-effects-atlas_4
+  - first:
+      213: -3560130289562446916
+    second: turret-effects-atlas_5
+  - first:
+      213: 7701949974559058380
+    second: turret-effects-atlas_6
+  - first:
+      213: 8564843824759931645
+    second: turret-effects-atlas_7
+  - first:
+      213: 7677162881104833600
+    second: turret-effects-atlas_8
+  - first:
+      213: 6319843595378766454
+    second: turret-effects-atlas_9
+  - first:
+      213: 2788332112376249183
+    second: turret-effects-atlas_10
+  - first:
+      213: -6629723040090350752
+    second: turret-effects-atlas_11
+  - first:
+      213: -1249440500679762127
+    second: turret-effects-atlas_12
+  - first:
+      213: -753810110133293718
+    second: turret-effects-atlas_13
+  - first:
+      213: -1255237857097043225
+    second: turret-effects-atlas_14
+  - first:
+      213: 7555970973427016053
+    second: turret-effects-atlas_15
+  - first:
+      213: -244918426294391316
+    second: turret-effects-atlas_16
+  - first:
+      213: -8542856882930894135
+    second: turret-effects-atlas_17
+  - first:
+      213: -8254926572046162821
+    second: turret-effects-atlas_18
+  - first:
+      213: 5307525451845472952
+    second: turret-effects-atlas_19
+  - first:
+      213: -7457522491253058665
+    second: turret-effects-atlas_20
+  - first:
+      213: 7806096476915453813
+    second: turret-effects-atlas_21
+  - first:
+      213: -5755181579621457230
+    second: turret-effects-atlas_22
+  - first:
+      213: 1733163145491030253
+    second: turret-effects-atlas_23
+  - first:
+      213: -4064918115099219427
+    second: turret-effects-atlas_24
+  - first:
+      213: -8708681884505415985
+    second: turret-effects-atlas_25
+  - first:
+      213: 2447414327034483855
+    second: turret-effects-atlas_26
+  - first:
+      213: 2406558247671226834
+    second: turret-effects-atlas_27
+  - first:
+      213: 9135234237302407499
+    second: turret-effects-atlas_28
+  - first:
+      213: 2279746191408231631
+    second: turret-effects-atlas_29
+  - first:
+      213: 1786395742480273329
+    second: turret-effects-atlas_30
+  - first:
+      213: 9066542827110359687
+    second: turret-effects-atlas_31
+  - first:
+      213: 2327821828786536933
+    second: turret-effects-atlas_32
+  - first:
+      213: -585086250660690531
+    second: turret-effects-atlas_33
+  - first:
+      213: -5257861350056264639
+    second: turret-effects-atlas_34
+  - first:
+      213: 5581347899638432208
+    second: turret-effects-atlas_35
+  - first:
+      213: 3848183230262501268
+    second: turret-effects-atlas_36
+  - first:
+      213: -4462785051540712516
+    second: turret-effects-atlas_37
+  - first:
+      213: 3349257678957894450
+    second: turret-effects-atlas_38
+  - first:
+      213: -6188276443563486443
+    second: turret-effects-atlas_39
+  - first:
+      213: 7325762102257219042
+    second: turret-effects-atlas_40
+  - first:
+      213: -6308365975366637991
+    second: turret-effects-atlas_41
+  - first:
+      213: -4847631206193861363
+    second: turret-effects-atlas_42
+  - first:
+      213: -8826493889585247197
+    second: turret-effects-atlas_43
+  - first:
+      213: 7012789710270880968
+    second: turret-effects-atlas_44
+  - first:
+      213: -7636686917350015807
+    second: turret-effects-atlas_45
+  - first:
+      213: 8426298401084234558
+    second: turret-effects-atlas_46
+  - first:
+      213: 3531180478888193028
+    second: turret-effects-atlas_47
+  - first:
+      213: 5507028816310021982
+    second: turret-effects-atlas_48
+  - first:
+      213: -5722336864809318418
+    second: turret-effects-atlas_49
+  - first:
+      213: 6420881189966601518
+    second: turret-effects-atlas_50
+  - first:
+      213: 151154149205100761
+    second: turret-effects-atlas_51
+  - first:
+      213: 4586790999363905410
+    second: turret-effects-atlas_52
+  - first:
+      213: -5491824550635769808
+    second: turret-effects-atlas_53
+  - first:
+      213: -4021614256927454726
+    second: turret-effects-atlas_54
+  - first:
+      213: -3022987344624287704
+    second: turret-effects-atlas_55
+  - first:
+      213: -5304557895704445390
+    second: turret-effects-atlas_56
+  - first:
+      213: 4072267021265790903
+    second: turret-effects-atlas_57
+  - first:
+      213: -1091636300856039274
+    second: turret-effects-atlas_58
+  - first:
+      213: 1099471423408118216
+    second: turret-effects-atlas_59
+  - first:
+      213: -1693983872376077352
+    second: turret-effects-atlas_60
+  - first:
+      213: 1971976801951277098
+    second: turret-effects-atlas_61
+  - first:
+      213: -7358531520986910708
+    second: turret-effects-atlas_62
+  - first:
+      213: -4860181880154386495
+    second: turret-effects-atlas_63
+  - first:
+      213: 8327093673245864042
+    second: turret-effects-atlas_64
+  - first:
+      213: 4597427594161173733
+    second: turret-effects-atlas_65
+  - first:
+      213: 8556483693740740205
+    second: turret-effects-atlas_66
+  - first:
+      213: 5815621305843398602
+    second: turret-effects-atlas_67
+  - first:
+      213: 1391031970364649623
+    second: turret-effects-atlas_68
+  - first:
+      213: 5981369959938251839
+    second: turret-effects-atlas_69
+  - first:
+      213: -2476273915829545390
+    second: turret-effects-atlas_70
+  - first:
+      213: -7555505044757397612
+    second: turret-effects-atlas_71
+  - first:
+      213: -2662185497815344218
+    second: turret-effects-atlas_72
+  - first:
+      213: 8388097612139143686
+    second: turret-effects-atlas_73
+  - first:
+      213: -25160556322846612
+    second: turret-effects-atlas_74
+  - first:
+      213: 44254878693338627
+    second: turret-effects-atlas_75
+  - first:
+      213: -4541687095115041736
+    second: turret-effects-atlas_76
+  - first:
+      213: -8377150912237627658
+    second: turret-effects-atlas_77
+  - first:
+      213: 3603492216113070002
+    second: turret-effects-atlas_78
+  - first:
+      213: -4028406450855281830
+    second: turret-effects-atlas_79
+  - first:
+      213: 3376134938306173035
+    second: turret-effects-atlas_80
+  - first:
+      213: -1807548126667154705
+    second: turret-effects-atlas_81
+  - first:
+      213: -7777537750549174945
+    second: turret-effects-atlas_82
+  - first:
+      213: -6267261945125912689
+    second: turret-effects-atlas_83
+  - first:
+      213: -1076984330716480942
+    second: turret-effects-atlas_84
+  - first:
+      213: 2786519364940049216
+    second: turret-effects-atlas_85
+  - first:
+      213: 6826129665142849324
+    second: turret-effects-atlas_86
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 300
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Effects_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 724
+        width: 362
+        height: 362
+      alignment: 9
+      pivot: {x: 0.1878453, y: 0.44198895}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a2cb8e049931d54082ac2ba48653c90
+      internalID: 1007256784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_01
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 724
+        width: 362
+        height: 362
+      alignment: 9
+      pivot: {x: 0.1878453, y: 0.44198895}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8919917e6fbfe4b41aee6bcd6e74c96a
+      internalID: -2116045811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_02
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 724
+        width: 362
+        height: 362
+      alignment: 9
+      pivot: {x: 0.1878453, y: 0.44198895}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 072ea17660d897a43b065be1be36fbe9
+      internalID: -668441278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_03
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 724
+        width: 362
+        height: 362
+      alignment: 9
+      pivot: {x: 0.09668508, y: 0.44198895}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d20ed1a0f471b594db04715f8ad86ab3
+      internalID: -1215595777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_04
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 362
+        width: 362
+        height: 362
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ca043ed5dcc0d4a869ebe019bf9033
+      internalID: -1795375106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_05
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 362
+        width: 362
+        height: 362
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddfeab40a161e974c8e7bc02444964cc
+      internalID: 1237644555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_06
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 362
+        width: 362
+        height: 362
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7df6db805bdacc34eb526af5e277e73c
+      internalID: -2032118858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_07
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 362
+        width: 362
+        height: 362
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f58cbda35977d478d621feb3a2755a
+      internalID: -653378043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_08
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 362
+        height: 362
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f9802120ffc63f4fb0325e20b3a0a0b
+      internalID: 2005334182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_09
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 0
+        width: 362
+        height: 362
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8615b8efd267954eaa64b59391493cd
+      internalID: 1847086645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_10
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 0
+        width: 362
+        height: 362
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d280de16cf83084d8e3a0e82313f476
+      internalID: -1278059747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_11
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 0
+        width: 362
+        height: 362
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10bc2255c5b7dbf4b9d705772cbe31d2
+      internalID: 287993356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f475cbd704a310a42b3e9a174630197f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Effects_00: 1007256784
+      Effects_01: -2116045811
+      Effects_02: -668441278
+      Effects_03: -1215595777
+      Effects_04: -1795375106
+      Effects_05: 1237644555
+      Effects_06: -2032118858
+      Effects_07: -653378043
+      Effects_08: 2005334182
+      Effects_09: 1847086645
+      Effects_10: -1278059747
+      Effects_11: 287993356
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

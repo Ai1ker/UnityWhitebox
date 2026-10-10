@@ -1,0 +1,644 @@
+fileFormatVersion: 2
+guid: 2f751ee32f3329c44a14fa41f15dfe29
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1142839122522622358
+    second: turret-mounted-atlas_0
+  - first:
+      213: 5940800956305189252
+    second: turret-mounted-atlas_1
+  - first:
+      213: -1324868145557032631
+    second: turret-mounted-atlas_2
+  - first:
+      213: -1901510099991124671
+    second: turret-mounted-atlas_3
+  - first:
+      213: -2340047059018728434
+    second: turret-mounted-atlas_4
+  - first:
+      213: -7437500549104381065
+    second: turret-mounted-atlas_5
+  - first:
+      213: 4232798879933246525
+    second: turret-mounted-atlas_6
+  - first:
+      213: -3444764464232684907
+    second: turret-mounted-atlas_7
+  - first:
+      213: -256378805004710744
+    second: turret-mounted-atlas_8
+  - first:
+      213: 6437182962849525948
+    second: turret-mounted-atlas_9
+  - first:
+      213: 7605796702614416977
+    second: turret-mounted-atlas_10
+  - first:
+      213: 264493603440322951
+    second: turret-mounted-atlas_11
+  - first:
+      213: -2680329077110554725
+    second: turret-mounted-atlas_12
+  - first:
+      213: -8427530879353177373
+    second: turret-mounted-atlas_13
+  - first:
+      213: 5848698001070885553
+    second: turret-mounted-atlas_14
+  - first:
+      213: 7190915446041108707
+    second: turret-mounted-atlas_15
+  - first:
+      213: 5900650306186194614
+    second: turret-mounted-atlas_16
+  - first:
+      213: 4039316804303903142
+    second: turret-mounted-atlas_17
+  - first:
+      213: 2853630101800059831
+    second: turret-mounted-atlas_18
+  - first:
+      213: 4012510028280152624
+    second: turret-mounted-atlas_19
+  - first:
+      213: 391371721433431876
+    second: turret-mounted-atlas_20
+  - first:
+      213: 5710281252861192083
+    second: turret-mounted-atlas_21
+  - first:
+      213: 7935766338814861046
+    second: turret-mounted-atlas_22
+  - first:
+      213: -6161431068415079990
+    second: turret-mounted-atlas_23
+  - first:
+      213: 8921588798822719835
+    second: turret-mounted-atlas_24
+  - first:
+      213: 1473054359476199226
+    second: turret-mounted-atlas_25
+  - first:
+      213: 7815566906003212815
+    second: turret-mounted-atlas_26
+  - first:
+      213: 5368354112791520102
+    second: turret-mounted-atlas_27
+  - first:
+      213: 5903061190151728553
+    second: turret-mounted-atlas_28
+  - first:
+      213: -3218906733796672097
+    second: turret-mounted-atlas_29
+  - first:
+      213: -4069540384128514322
+    second: turret-mounted-atlas_30
+  - first:
+      213: 6456034548205473339
+    second: turret-mounted-atlas_31
+  - first:
+      213: -1740005954051154048
+    second: turret-mounted-atlas_32
+  - first:
+      213: 3812201822386940182
+    second: turret-mounted-atlas_33
+  - first:
+      213: -3819751614904250605
+    second: turret-mounted-atlas_34
+  - first:
+      213: -8850754369360136883
+    second: turret-mounted-atlas_35
+  - first:
+      213: -5000390668587857769
+    second: turret-mounted-atlas_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 165
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mounted_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 418
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49282297}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5ecf04ba32e0494686e76023a0e51ce
+      internalID: -1847081320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mounted_01
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 418
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49282297}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9073b40e0e26bdc4382f06be8d70bd85
+      internalID: -1107329998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mounted_02
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 418
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49282297}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf910b9f709b047419ef69a053a640ec
+      internalID: 888121843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mounted_03
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 418
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49282297}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbaa7237afa607e4faca8280230b9a81
+      internalID: 1907728047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mounted_04
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 418
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49282297}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b45524a64cf7dd44a29f0470952afbc
+      internalID: -1882055181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mounted_05
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 418
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49282297}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ed770a3c6485a41abcb1184058c13b
+      internalID: -488950151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mounted_06
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 209
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49282297}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31a6140b09ed9224186920594a8ab01c
+      internalID: -1677211178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mounted_07
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 209
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49282297}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 458a167d478ce394ba349dde9399001d
+      internalID: 590452646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mounted_08
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 209
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49282297}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d0ab02e093a0304ca3523324801447e
+      internalID: -2090732016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mounted_09
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 209
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49282297}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29c64b4730fc8134495bf081de772ba0
+      internalID: -412495584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mounted_10
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 209
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49282297}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b10ece81539e2114a8c2d21cb950f57c
+      internalID: -565196077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mounted_11
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 209
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49282297}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d77ec9baba9a43547b307a750cfa631d
+      internalID: 107869209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mounted_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5167464}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ad6fa6be07b94846b662b42acd7d318
+      internalID: -808254473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mounted_13
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 0
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5167464}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca78fd8c22c076b4ebc02d648043b78c
+      internalID: -1393811632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mounted_14
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 0
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5167464}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b0ce2f4e19c25a4689c8dad3546935e
+      internalID: 219919799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mounted_15
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 0
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5167464}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e25db16d2d3229e4795409bfe959d86c
+      internalID: 1389689305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mounted_16
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 0
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5167464}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e199ec8a898a3c047802ccf4206bc3b6
+      internalID: -1801569137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mounted_17
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 0
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5167464}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69746c0cb086ffd43969e6edff0a771b
+      internalID: -1395807899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: dd0b8602622bfce4fa6559fba0c5e370
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Mounted_00: -1847081320
+      Mounted_01: -1107329998
+      Mounted_02: 888121843
+      Mounted_03: 1907728047
+      Mounted_04: -1882055181
+      Mounted_05: -488950151
+      Mounted_06: -1677211178
+      Mounted_07: 590452646
+      Mounted_08: -2090732016
+      Mounted_09: -412495584
+      Mounted_10: -565196077
+      Mounted_11: 107869209
+      Mounted_12: -808254473
+      Mounted_13: -1393811632
+      Mounted_14: 219919799
+      Mounted_15: 1389689305
+      Mounted_16: -1801569137
+      Mounted_17: -1395807899
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

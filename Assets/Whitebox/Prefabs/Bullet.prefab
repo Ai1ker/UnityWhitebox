@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8596541316112675466}
   - component: {fileID: 5473479149765445083}
   - component: {fileID: 7526311849730749030}
+  - component: {fileID: 5308096071491948596}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -85,8 +86,8 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 8
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: 0413a1a012fe1ca48a58a4a4acd2a88f, type: 3}
-  m_Color: {r: 1, g: 0.56, b: 0.24, a: 1}
+  m_Sprite: {fileID: 1558466032, guid: 642c9374ebede00438baeec1aab4c9c3, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -175,6 +176,8 @@ MonoBehaviour:
   gravityEditable: 1
   gravityDirection: {x: 0, y: -1}
   gravityAcceleration: 0
+  lateralDamping: 0
+  maxSpeed: 30
 --- !u!114 &7526311849730749030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,3 +192,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::VectorWhitebox.WhiteboxBullet
   owner: {fileID: 0}
   reflected: 0
+  gravityAltered: 0
+--- !u!114 &5308096071491948596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6962455065933457001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fba436770773fbd40b0b7a7f8168c20e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VectorWhitebox.SpriteFrameAnimation
+  spriteRenderer: {fileID: 9112351226398459104}
+  frames:
+  - {fileID: 1558466032, guid: 642c9374ebede00438baeec1aab4c9c3, type: 3}
+  - {fileID: 1879229569, guid: 642c9374ebede00438baeec1aab4c9c3, type: 3}
+  - {fileID: 1569449870, guid: 642c9374ebede00438baeec1aab4c9c3, type: 3}
+  - {fileID: -1048550796, guid: 642c9374ebede00438baeec1aab4c9c3, type: 3}
+  framesPerSecond: 10
+  loop: 1
+  destroyWhenFinished: 0

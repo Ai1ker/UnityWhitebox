@@ -31,13 +31,13 @@ namespace VectorWhitebox
             if (Mode != 0 || SceneFadeTransition.IsTransitioning || WhiteboxGame.Instance.Dead || WhiteboxGame.Instance.Completed ||
                 (WhiteboxGame.Instance.pauseMenu && WhiteboxGame.Instance.pauseMenu.IsOpen)) return false;
             if (mode != 1 && mode != 2) return false;
-            if (mode == 2 && PlayerGravityLocked()) { WhiteboxGame.Instance.Message("红色边界内无法使用技能 2"); return false; }
+            if (mode == 2 && PlayerGravityLocked()) { WhiteboxGame.Instance.Message("红色边界内无法使用技能 2", "Skill 2 is disabled inside red boundaries."); return false; }
             if (CooldownRemaining(mode) > 0)
             {
-                WhiteboxGame.Instance.Message("技能 " + mode + " 冷却中：" + CooldownRemaining(mode).ToString("0.0") + " 秒");
+                WhiteboxGame.Instance.Message("技能 {0} 冷却中：{1:0.0} 秒", "Skill {0} cooldown: {1:0.0}s", mode, CooldownRemaining(mode));
                 return false;
             }
-            if (WhiteboxGame.Instance.Energy < (mode == 1 ? 30 : 40)) { WhiteboxGame.Instance.Message("能量不足，等待回复"); return false; }
+            if (WhiteboxGame.Instance.Energy < (mode == 1 ? 30 : 40)) { WhiteboxGame.Instance.Message("能量不足，等待回复", "Not enough energy. Wait for it to recharge."); return false; }
             Mode = mode; Selected = null; dragging = false;
             Time.timeScale = slowScale; Time.fixedDeltaTime = normalFixed * slowScale;
             return true;
@@ -45,7 +45,7 @@ namespace VectorWhitebox
         public bool Select(DirectionTarget target)
         {
             if (Mode == 0 || !target || (Mode == 2 && (target.isPlayer || !target.gravityEditable))) return false;
-            if (Mode == 2 && (target.GravityLocked || PlayerGravityLocked())) { WhiteboxGame.Instance.Message("红色边界内无法使用技能 2 改变重力"); return false; }
+            if (Mode == 2 && (target.GravityLocked || PlayerGravityLocked())) { WhiteboxGame.Instance.Message("红色边界内无法使用技能 2 改变重力", "Skill 2 cannot change gravity inside red boundaries."); return false; }
             Selected = target;
             Aim = Mode == 1 ? target.Body.linearVelocity.normalized : Cardinal(target.gravityDirection);
             return true;
@@ -62,18 +62,18 @@ namespace VectorWhitebox
         }
         public bool Commit()
         {
-            if (Mode == 0 || !Selected) { WhiteboxGame.Instance.Message("先用鼠标选择一个可操作目标"); return false; }
+            if (Mode == 0 || !Selected) { WhiteboxGame.Instance.Message("先用鼠标选择一个可操作目标", "Select a target with the mouse first."); return false; }
             float cost = Mode == 1 ? 30 : 40;
             if (WhiteboxGame.Instance.Energy < cost) return false;
             bool redirectingPlayer = Mode == 1 && Selected.GetComponent<WhiteboxPlayer>();
             if (Mode == 1)
             {
-                if (!Selected.Redirect(Aim)) { WhiteboxGame.Instance.Message("目标当前没有速度：技能 1 只改变已有速度的方向"); return false; }
+                if (!Selected.Redirect(Aim)) { WhiteboxGame.Instance.Message("目标当前没有速度：技能 1 只改变已有速度的方向", "The target is stationary. Skill 1 redirects existing velocity."); return false; }
             }
             else
             {
                 if (Selected.isPlayer || !Selected.gravityEditable || Aim.sqrMagnitude < .001f) return false;
-                if (Selected.GravityLocked || PlayerGravityLocked()) { WhiteboxGame.Instance.Message("红色边界内无法使用技能 2 改变重力"); return false; }
+                if (Selected.GravityLocked || PlayerGravityLocked()) { WhiteboxGame.Instance.Message("红色边界内无法使用技能 2 改变重力", "Skill 2 cannot change gravity inside red boundaries."); return false; }
                 Selected.ApplyTemporaryGravity(Cardinal(Aim), gravityDurationSeconds);
                 var bullet = Selected.GetComponent<WhiteboxBullet>();
                 if (bullet) bullet.MarkGravityAltered();
@@ -87,6 +87,10 @@ namespace VectorWhitebox
                     (redirectingPlayer ? selfRedirectsSinceGrounded * SelfRedirectCooldownStep : 0);
             }
             else nextSkill2 = WhiteboxGame.GameplayTime + cooldownSeconds;
+            var playerVisual = WhiteboxGame.Instance.player.GetComponentInChildren<RobotPlayerVisual>();
+            if (playerVisual) playerVisual.PlaySkillRelease(Mode);
+            LaboratoryAudio.Play(Mode == 1 ? LaboratorySound.SkillVelocity : LaboratorySound.SkillGravity,
+                WhiteboxGame.Instance.player.transform.position);
             Cancel(); return true;
         }
         public void OnPlayerLanded()
@@ -116,7 +120,7 @@ namespace VectorWhitebox
             if (k == null || m == null) return;
             if (WhiteboxGame.Instance && WhiteboxGame.Instance.pauseMenu && WhiteboxGame.Instance.pauseMenu.IsOpen) return;
             if (Mode == 2 && PlayerGravityLocked())
-            { Cancel(); WhiteboxGame.Instance.Message("进入红色边界，已取消技能 2 瞄准"); return; }
+            { Cancel(); WhiteboxGame.Instance.Message("进入红色边界，已取消技能 2 瞄准", "Entered a red boundary. Skill 2 targeting canceled."); return; }
             if (m.rightButton.wasPressedThisFrame) Cancel();
             int pressed = WhiteboxControls.Pressed(WhiteboxAction.SkillOne) ? 1 : WhiteboxControls.Pressed(WhiteboxAction.SkillTwo) ? 2 : 0;
             if (pressed != 0) { if (Mode == 0) Begin(pressed); else if (Mode == pressed) Commit(); }

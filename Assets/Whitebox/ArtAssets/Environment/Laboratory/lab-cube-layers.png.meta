@@ -1,0 +1,231 @@
+fileFormatVersion: 2
+guid: ad4e359199bab74478bffb7adee1b88a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6923317295853125997
+    second: lab-cube-layers_0
+  - first:
+      213: -6863284934070197758
+    second: lab-cube-layers_1
+  - first:
+      213: -9169997392232825624
+    second: lab-cube-layers_2
+  - first:
+      213: 3321837920605421452
+    second: lab-cube-layers_3
+  - first:
+      213: -5948881606170147947
+    second: lab-cube-layers_4
+  - first:
+      213: -7388972333301229020
+    second: lab-cube-layers_5
+  - first:
+      213: -2611314945454106173
+    second: lab-cube-layers_6
+  - first:
+      213: 5834055870279206516
+    second: lab-cube-layers_7
+  - first:
+      213: 1411366205830477671
+    second: lab-cube-layers_8
+  - first:
+      213: 7919344100468958599
+    second: lab-cube-layers_9
+  - first:
+      213: -4659258933815012667
+    second: lab-cube-layers_10
+  - first:
+      213: -3803210511877302389
+    second: lab-cube-layers_11
+  - first:
+      213: 3976198873242045470
+    second: lab-cube-layers_12
+  - first:
+      213: -4736176418600193275
+    second: lab-cube-layers_13
+  - first:
+      213: -7614484635101186048
+    second: lab-cube-layers_14
+  - first:
+      213: -1794747149319531154
+    second: lab-cube-layers_15
+  - first:
+      213: -4822349212618658051
+    second: lab-cube-layers_16
+  - first:
+      213: 7015804893182493967
+    second: lab-cube-layers_17
+  - first:
+      213: -7126705654958175951
+    second: lab-cube-layers_18
+  - first:
+      213: -2944322057224350522
+    second: lab-cube-layers_19
+  - first:
+      213: 2070561702776429896
+    second: lab-cube-layers_20
+  - first:
+      213: -7144445830675978374
+    second: lab-cube-layers_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 743
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LabCube_Shell
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 95
+        width: 743
+        height: 698
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49426934}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af54dc35eaf1e5349a13e4d41b9a8583
+      internalID: 368613680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LabCube_Core
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 86
+        width: 743
+        height: 698
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3ed74b52e9ea0149b8d5331e226a966
+      internalID: 1731402829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a5f8b8cb0f1388b4094add5484b4010a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      LabCube_Core: 1731402829
+      LabCube_Shell: 368613680
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

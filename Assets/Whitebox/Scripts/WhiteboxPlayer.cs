@@ -26,11 +26,38 @@ namespace VectorWhitebox
         bool wasGrounded;
         float move, coyote, jumpBuffer, dropTimer;
         bool cutJump;
+        Vector2 lastFootstepPosition;
+        float footstepDistance, nextFootstepTime;
+        bool trackingFootsteps;
         Collider2D support;
         readonly RaycastHit2D[] hits = new RaycastHit2D[12];
         readonly ContactPoint2D[] headContacts = new ContactPoint2D[32];
         readonly Rigidbody2D[] pressingBodies = new Rigidbody2D[32];
         readonly System.Collections.Generic.List<Collider2D> ignored = new System.Collections.Generic.List<Collider2D>();
+        void LateUpdate()
+        {
+            if (!body) { ResetFootsteps(); return; }
+            Vector2 position = body.position;
+            var game = WhiteboxGame.Instance;
+            if (!Grounded || !support || !shape || !shape.IsTouching(support) || !body.simulated || Time.timeScale <= 0 ||
+                (game && game.InputLocked) || Mathf.Abs(move) < .1f || Mathf.Abs(body.linearVelocity.x) < .15f)
+            { ResetFootsteps(); return; }
+            if (!trackingFootsteps)
+            { lastFootstepPosition = position; trackingFootsteps = true; return; }
+            Vector2 displacement = position - lastFootstepPosition;
+            lastFootstepPosition = position;
+            // Teleports and abrupt resets are not walking distance.
+            if (displacement.sqrMagnitude > 9f) { ResetFootsteps(); return; }
+            footstepDistance += Mathf.Abs(displacement.x);
+            if (footstepDistance < 1.65f || Time.time < nextFootstepTime) return;
+            footstepDistance %= 1.65f;
+            nextFootstepTime = Time.time + .16f;
+            LaboratoryAudio.Play(LaboratorySound.Footstep, transform.position,
+                Mathf.Clamp(Mathf.Abs(body.linearVelocity.x) / Mathf.Max(.1f, runSpeed), .4f, 1f), Random.Range(.95f, 1.05f));
+        }
+        void ResetFootsteps()
+        { trackingFootsteps = false; footstepDistance = 0; nextFootstepTime = 0; }
+        void OnDisable() { ResetFootsteps(); }
         void OnCollisionEnter2D(Collision2D collision) { RecordHeadImpact(collision); }
         void OnCollisionStay2D(Collision2D collision) { RecordHeadImpact(collision); }
         void RecordHeadImpact(Collision2D collision)
@@ -96,7 +123,10 @@ namespace VectorWhitebox
             else if (move < 0 && v.x > -runSpeed)
                 v.x = Mathf.Max(-runSpeed, v.x - airAcceleration * dt);
             if (jumpBuffer > 0 && coyote > 0 && !PreservingMomentum)
-            { v += up * (jumpSpeed - Vector2.Dot(v, up)); jumpBuffer = 0; coyote = 0; Grounded = false; }
+            {
+                v += up * (jumpSpeed - Vector2.Dot(v, up)); jumpBuffer = 0; coyote = 0; Grounded = false;
+                LaboratoryAudio.Play(LaboratorySound.Jump, transform.position);
+            }
             float risingSpeed = Vector2.Dot(v, up);
             if (cutJump && risingSpeed > 0 && !PreservingMomentum) v -= up * risingSpeed * .52f;
             cutJump = false;
@@ -154,6 +184,7 @@ namespace VectorWhitebox
         public void ReleaseMomentum() { PreservingMomentum = true; jumpBuffer = 0; coyote = 0; cutJump = false; }
         public void ResetMotion()
         {
+            ResetFootsteps();
             StopAllCoroutines();
             foreach (var c in ignored) if (c) Physics2D.IgnoreCollision(shape, c, false);
             ignored.Clear(); move = coyote = jumpBuffer = 0; body.linearVelocity = Vector2.zero;

@@ -33,6 +33,7 @@ namespace VectorWhitebox
             }
             ActivationCount++;
             door.OpenFor(activeSeconds);
+            if (Application.isPlaying) LaboratoryAudio.Play(LaboratorySound.BulletSwitch, transform.position);
         }
 
         public void ResetSwitch()

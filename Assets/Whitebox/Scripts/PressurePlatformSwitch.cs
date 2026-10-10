@@ -17,6 +17,7 @@ namespace VectorWhitebox
         public bool Pressed { get; private set; }
         public bool Active { get; private set; }
         float activeUntil = -1;
+        bool soundReady;
         const float ContactPadding = .06f;
 
         struct Box
@@ -32,9 +33,12 @@ namespace VectorWhitebox
         void Tick(float now)
         {
             bool pressed = IsPressed();
+            if (pressed && !Pressed && soundReady && Application.isPlaying)
+                LaboratoryAudio.Play(LaboratorySound.PressurePlate, transform.position);
             if (pressed || Pressed) activeUntil = now + Mathf.Max(.1f, activeSeconds);
             Pressed = pressed;
             Active = pressed || now < activeUntil;
+            soundReady = true;
             ApplyState();
         }
 
@@ -95,6 +99,7 @@ namespace VectorWhitebox
         {
             Pressed = Active = false;
             activeUntil = -1;
+            soundReady = false;
             // Unassigned built-in platforms stay hidden when a designer leaves a slot empty or replaces it.
             if (gameObject.scene.IsValid())
                 foreach (var platform in GetComponentsInChildren<PlatformEffector2D>(true))

@@ -40,6 +40,7 @@ namespace VectorWhitebox
             if (!game) return;
             activated = true;
             game.SetCheckpoint((Vector2)transform.position + respawnOffset, resetPuzzlesOnDeath);
+            if (Application.isPlaying) LaboratoryAudio.Play(LaboratorySound.Checkpoint, transform.position);
         }
     }
 }

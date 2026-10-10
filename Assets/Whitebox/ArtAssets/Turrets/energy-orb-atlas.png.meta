@@ -1,0 +1,313 @@
+fileFormatVersion: 2
+guid: 642c9374ebede00438baeec1aab4c9c3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2911769356286552596
+    second: energy-orb-atlas_0
+  - first:
+      213: -969693129936896491
+    second: energy-orb-atlas_1
+  - first:
+      213: -7269302659713953742
+    second: energy-orb-atlas_2
+  - first:
+      213: -6654140276887189278
+    second: energy-orb-atlas_3
+  - first:
+      213: 750472315351972145
+    second: energy-orb-atlas_4
+  - first:
+      213: -2029849976937477284
+    second: energy-orb-atlas_5
+  - first:
+      213: 1501042783808940795
+    second: energy-orb-atlas_6
+  - first:
+      213: 6280258423048985572
+    second: energy-orb-atlas_7
+  - first:
+      213: -7961305035825734477
+    second: energy-orb-atlas_8
+  - first:
+      213: -7176824745327249592
+    second: energy-orb-atlas_9
+  - first:
+      213: 1041719097773904936
+    second: energy-orb-atlas_10
+  - first:
+      213: 7765335554790403422
+    second: energy-orb-atlas_11
+  - first:
+      213: -1062950944327632636
+    second: energy-orb-atlas_12
+  - first:
+      213: -8892530460628668285
+    second: energy-orb-atlas_13
+  - first:
+      213: -3117770027231240539
+    second: energy-orb-atlas_14
+  - first:
+      213: 8590735595491784578
+    second: energy-orb-atlas_15
+  - first:
+      213: -4029287188258707918
+    second: energy-orb-atlas_16
+  - first:
+      213: -6747581959790574051
+    second: energy-orb-atlas_17
+  - first:
+      213: 5357356262916571929
+    second: energy-orb-atlas_18
+  - first:
+      213: 2794307378305903810
+    second: energy-orb-atlas_19
+  - first:
+      213: -5982367878688549942
+    second: energy-orb-atlas_20
+  - first:
+      213: -1114665047230963408
+    second: energy-orb-atlas_21
+  - first:
+      213: -6575398728570209952
+    second: energy-orb-atlas_22
+  - first:
+      213: 230196584858896535
+    second: energy-orb-atlas_23
+  - first:
+      213: 5104692765800776742
+    second: energy-orb-atlas_24
+  - first:
+      213: -8082757800309237414
+    second: energy-orb-atlas_25
+  - first:
+      213: -3422790071222038736
+    second: energy-orb-atlas_26
+  - first:
+      213: -8754526775080051375
+    second: energy-orb-atlas_27
+  - first:
+      213: 3692840933552145364
+    second: energy-orb-atlas_28
+  - first:
+      213: -857322058477542495
+    second: energy-orb-atlas_29
+  - first:
+      213: -929889273872757553
+    second: energy-orb-atlas_30
+  - first:
+      213: 6193169892619988441
+    second: energy-orb-atlas_31
+  - first:
+      213: -2082836439255439470
+    second: energy-orb-atlas_32
+  - first:
+      213: -583427062229738590
+    second: energy-orb-atlas_33
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 400
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: EnergyOrb_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 543
+        height: 724
+      alignment: 9
+      pivot: {x: 0.5057258, y: 0.5012224}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bac91fb69ece21a4d9c89d5d70a8d1af
+      internalID: 1558466032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyOrb_01
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 0
+        width: 543
+        height: 724
+      alignment: 9
+      pivot: {x: 0.49840724, y: 0.5024435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ceb1f8a52b05c841924ad0917567d63
+      internalID: 1879229569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyOrb_02
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 0
+        width: 543
+        height: 724
+      alignment: 9
+      pivot: {x: 0.49731085, y: 0.4955255}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0d0693570097da4584a80f73394b871
+      internalID: 1569449870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyOrb_03
+      rect:
+        serializedVersion: 2
+        x: 1629
+        y: 0
+        width: 543
+        height: 724
+      alignment: 9
+      pivot: {x: 0.4829749, y: 0.496236}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec54b84e1759aea428e38093179408c8
+      internalID: -1048550796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: fbed86f2566973849a4f11ecbb7b609a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      EnergyOrb_00: 1558466032
+      EnergyOrb_01: 1879229569
+      EnergyOrb_02: 1569449870
+      EnergyOrb_03: -1048550796
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

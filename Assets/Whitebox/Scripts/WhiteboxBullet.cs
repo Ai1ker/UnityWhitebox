@@ -9,6 +9,7 @@ namespace VectorWhitebox
         public bool gravityAltered;
         float age;
         bool ownerCollisionRestored;
+        bool impactSoundPlayed;
         public void MarkReflected()
         {
             reflected = true;
@@ -39,7 +40,14 @@ namespace VectorWhitebox
         void OnCollisionEnter2D(Collision2D collision)
         {
             if (TryActivateSwitch(collision.gameObject)) { Destroy(gameObject); return; }
-            if (collision.gameObject.GetComponent<WhiteboxPlayer>() && WhiteboxGame.Instance) WhiteboxGame.Instance.Damage(25);
+            bool hitPlayer = collision.gameObject.GetComponent<WhiteboxPlayer>();
+            if (!impactSoundPlayed)
+            {
+                impactSoundPlayed = true;
+                Vector3 impactPosition = collision.contactCount > 0 ? (Vector3)collision.GetContact(0).point : transform.position;
+                LaboratoryAudio.Play(hitPlayer ? LaboratorySound.BulletHitPlayer : LaboratorySound.BulletHitWall, impactPosition);
+            }
+            if (hitPlayer && WhiteboxGame.Instance) WhiteboxGame.Instance.Damage(25);
             var launchReceiver = collision.gameObject.GetComponent<BulletLaunchReceiver>();
             if (launchReceiver)
                 launchReceiver.Launch(GetComponent<Rigidbody2D>().linearVelocity, collision.GetContact(0).normal);

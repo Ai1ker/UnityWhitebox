@@ -1,0 +1,435 @@
+fileFormatVersion: 2
+guid: 6e07d95fef0e55b4fa2ebc36276ab2d1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2990024196272860381
+    second: halo-robot-death_0
+  - first:
+      213: -6486736728553351548
+    second: halo-robot-death_1
+  - first:
+      213: 7030744329310033827
+    second: halo-robot-death_2
+  - first:
+      213: -2781767989437946765
+    second: halo-robot-death_3
+  - first:
+      213: -3878706667833010158
+    second: halo-robot-death_4
+  - first:
+      213: 211339384909303881
+    second: halo-robot-death_5
+  - first:
+      213: -4886288048713310196
+    second: halo-robot-death_6
+  - first:
+      213: -7039736038518628836
+    second: halo-robot-death_7
+  - first:
+      213: -7973791851865755035
+    second: halo-robot-death_8
+  - first:
+      213: -1996056183918237439
+    second: halo-robot-death_9
+  - first:
+      213: 6234378885119315533
+    second: halo-robot-death_10
+  - first:
+      213: 814139463272122564
+    second: halo-robot-death_11
+  - first:
+      213: 7969872921426263294
+    second: halo-robot-death_12
+  - first:
+      213: 4052390951511183414
+    second: halo-robot-death_13
+  - first:
+      213: -3853862956308648607
+    second: halo-robot-death_14
+  - first:
+      213: 6733942523789866467
+    second: halo-robot-death_15
+  - first:
+      213: -4287973902208239716
+    second: halo-robot-death_16
+  - first:
+      213: 199093558991782318
+    second: halo-robot-death_17
+  - first:
+      213: 2585132965152835306
+    second: halo-robot-death_18
+  - first:
+      213: 1787889941307507596
+    second: halo-robot-death_19
+  - first:
+      213: 4155505929422956634
+    second: halo-robot-death_20
+  - first:
+      213: -589191218043919575
+    second: halo-robot-death_21
+  - first:
+      213: -4500728622432498025
+    second: halo-robot-death_22
+  - first:
+      213: -1899420119790955192
+    second: halo-robot-death_23
+  - first:
+      213: 1106293966091640543
+    second: halo-robot-death_24
+  - first:
+      213: -7341152898553780078
+    second: halo-robot-death_25
+  - first:
+      213: -2362877108747920386
+    second: halo-robot-death_26
+  - first:
+      213: 1688187545694009305
+    second: halo-robot-death_27
+  - first:
+      213: 8569024379269063281
+    second: halo-robot-death_28
+  - first:
+      213: -8988010348450788066
+    second: halo-robot-death_29
+  - first:
+      213: 4258363368414115989
+    second: halo-robot-death_30
+  - first:
+      213: -5596659781460561290
+    second: halo-robot-death_31
+  - first:
+      213: -8814847408881848590
+    second: halo-robot-death_32
+  - first:
+      213: 3584368475894285389
+    second: halo-robot-death_33
+  - first:
+      213: -129000967013547153
+    second: halo-robot-death_34
+  - first:
+      213: 424927129256648680
+    second: halo-robot-death_35
+  - first:
+      213: -7978967208719339560
+    second: halo-robot-death_36
+  - first:
+      213: -6052004209148292356
+    second: halo-robot-death_37
+  - first:
+      213: -2039409241919266395
+    second: halo-robot-death_38
+  - first:
+      213: -2013169772889478081
+    second: halo-robot-death_39
+  - first:
+      213: -7148626957698255772
+    second: halo-robot-death_40
+  - first:
+      213: 8644270046425661436
+    second: halo-robot-death_41
+  - first:
+      213: -321517496079702387
+    second: halo-robot-death_42
+  - first:
+      213: 3202384030113666034
+    second: halo-robot-death_43
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 277.1875
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CoreRobot_Death_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 444
+        width: 444
+        height: 443
+      alignment: 9
+      pivot: {x: 0.5527344, y: 0.0112866815}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c5c34919c4c6774b92027da79bd2c55
+      internalID: 1770428557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoreRobot_Death_01
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 444
+        width: 443
+        height: 443
+      alignment: 9
+      pivot: {x: 0.5527344, y: 0.0112866815}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 340a99a6e46093f458df4d7647272452
+      internalID: -2109438172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoreRobot_Death_02
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 444
+        width: 443
+        height: 443
+      alignment: 9
+      pivot: {x: 0.5527344, y: 0.0112866815}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea11469ce096da842a954015db8c742c
+      internalID: -1020424401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoreRobot_Death_03
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 444
+        width: 444
+        height: 443
+      alignment: 9
+      pivot: {x: 0.5527344, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfe1ced9e05be6a4eb5b0e5ca1604357
+      internalID: 367323406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoreRobot_Death_04
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 444
+        height: 444
+      alignment: 9
+      pivot: {x: 0.5527344, y: 0.08108108}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30bf32e45727fb94283c008437d0c8d7
+      internalID: 1217414779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoreRobot_Death_05
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 0
+        width: 443
+        height: 444
+      alignment: 9
+      pivot: {x: 0.5527344, y: 0.08108108}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58be8d3962cb90b409ec15cec1896fdc
+      internalID: 1692378291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoreRobot_Death_06
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 0
+        width: 443
+        height: 444
+      alignment: 9
+      pivot: {x: 0.5527344, y: 0.08558559}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86549802e70d0fe41848dfd23257165c
+      internalID: 1784206224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoreRobot_Death_07
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 0
+        width: 444
+        height: 444
+      alignment: 9
+      pivot: {x: 0.5527344, y: 0.08558559}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d541fb9f2eadbe4cae694dbf7e6920e
+      internalID: 1476627089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c8a97b30ccea77649ac306e3fa29cf78
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      CoreRobot_Death_00: 1770428557
+      CoreRobot_Death_01: -2109438172
+      CoreRobot_Death_02: -1020424401
+      CoreRobot_Death_03: 367323406
+      CoreRobot_Death_04: 1217414779
+      CoreRobot_Death_05: 1692378291
+      CoreRobot_Death_06: 1784206224
+      CoreRobot_Death_07: 1476627089
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -8,6 +8,8 @@ namespace VectorWhitebox
     public class SceneHintText : MonoBehaviour
     {
         [TextArea(3, 10)] public string content = "在这里填写给玩家的提示。\n支持中文、多行和自动换行。";
+        [Tooltip("English text. Leave empty to use a built-in translation when available, otherwise the original text.")]
+        [TextArea(3, 10)] public string contentEnglish = "";
         public Vector2 boxSize = new Vector2(7, 2.4f);
         [Range(14, 80)] public int fontSize = 36;
         [Range(0, 50)] public float padding = 18;
@@ -22,7 +24,11 @@ namespace VectorWhitebox
         Material generatedBackgroundMaterial;
         bool needsRefresh;
 
-        void OnEnable() { Refresh(); }
+        void OnEnable()
+        {
+            WhiteboxLocalization.LanguageChanged += Refresh;
+            Refresh();
+        }
         void OnValidate() { needsRefresh = true; }
         void Update() { if (needsRefresh) Refresh(); }
         public void Refresh()
@@ -53,7 +59,8 @@ namespace VectorWhitebox
             label.font = customFont ? customFont : generatedFont;
             // The font atlas stores glyph coverage in alpha; its text shader renders Chinese correctly in the 2D pipeline.
             label.material = label.font ? label.font.material : null;
-            label.text = content;
+            label.text = WhiteboxLocalization.Text(content,
+                string.IsNullOrWhiteSpace(contentEnglish) ? DefaultEnglish(content) : contentEnglish);
             label.fontSize = fontSize;
             label.color = textColor;
             label.raycastTarget = false;
@@ -64,6 +71,28 @@ namespace VectorWhitebox
             label.resizeTextMaxSize = fontSize;
             label.rectTransform.offsetMin = Vector2.one * padding;
             label.rectTransform.offsetMax = Vector2.one * -padding;
+        }
+        static string DefaultEnglish(string original)
+        {
+            // Existing scene overrides keep their Chinese source and their authored line breaks.
+            // Only known project text is translated here; new hints can supply contentEnglish.
+            switch ((original ?? "").Trim())
+            {
+                case "在这里填写给玩家的提示。\n支持中文、多行和自动换行。":
+                    return "Write a hint for the player here.\nSupports multiple lines and automatic word wrapping.";
+                case "有时候炮塔也可以帮助你推开BOX":
+                    return "Sometimes a turret can help you move a box.";
+                case "tips:技能1可以对自己释放":
+                    return "Tip: Skill 1 can also target yourself.";
+                case "推进器：在推进器的\n橙色边界内可以不断\n加速箱子":
+                    return "Accelerator: the orange boundary\nlets the box keep building momentum.";
+                case "第四关":
+                    return "Level 4";
+                case "引力流:强制把任何进入其\n中的物体拉向一个方向":
+                    return "Gravity field: forces every object\ninside toward its assigned direction.";
+                default:
+                    return "";
+            }
         }
         void CreateVisuals()
         {
@@ -90,6 +119,7 @@ namespace VectorWhitebox
         }
         void OnDisable()
         {
+            WhiteboxLocalization.LanguageChanged -= Refresh;
             if (label)
             {
                 label.font = null; label.material = null;

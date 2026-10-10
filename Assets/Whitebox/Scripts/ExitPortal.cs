@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace VectorWhitebox
 {
@@ -21,17 +22,25 @@ namespace VectorWhitebox
         }
         void OnTriggerEnter2D(Collider2D other)
         {
-            if (entered || !other.GetComponent<WhiteboxPlayer>()) return;
+            if (entered || !other.GetComponentInParent<WhiteboxPlayer>() || SceneFadeTransition.IsTransitioning) return;
             var game = WhiteboxGame.Instance;
+            if (!game || game.Dead || game.Completed) return;
             if (requireTurretDefeated)
                 foreach (var turret in FindObjectsByType<WhiteboxTurret>())
-                    if (!turret.destroyed) { if (game) game.Message("先摧毁炮塔，再进入传送门"); return; }
+                    if (!turret.destroyed) { if (game) game.Message("先摧毁炮塔，再进入传送门", "Destroy the turrets before entering the portal."); return; }
             if (requireAllGatesOpen)
                 foreach (var gate in FindObjectsByType<PressureGate>())
-                    if (!gate.Open) { if (game) game.Message("先打开所有感应门，再进入传送门"); return; }
+                    if (!gate.Open) { if (game) game.Message("先打开所有感应门，再进入传送门", "Open all sensor doors before entering the portal."); return; }
+            if (string.IsNullOrEmpty(nextScene) || !Application.CanStreamedLevelBeLoaded(nextScene))
+            { game.Message("下一关尚未加入构建列表。", "The next level is missing from the build list."); return; }
             entered = true;
-            if (game) game.BeginExit();
+            game.BeginExit();
             SceneFadeTransition.Travel(nextScene);
+            if (SceneFadeTransition.IsTransitioning)
+            {
+                LevelUnlockProgress.MarkLevelCompleted(SceneManager.GetActiveScene().path);
+                if (Application.isPlaying) LaboratoryAudio.Play(LaboratorySound.Portal, transform.position);
+            }
         }
     }
 }

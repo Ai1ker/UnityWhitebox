@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d086c1bc49b6fc4a967a30116d0c6c7, type: 3}
+  m_Name: SoundBank
+  m_EditorClassIdentifier: Assembly-CSharp::VectorWhitebox.LaboratorySoundBank
+  sounds:
+  - sound: 0
+    clips:
+    - {fileID: 8300000, guid: 29e26142f24b1b04e9f36bff4f58da6c, type: 3}
+    - {fileID: 8300000, guid: c97d68b18f2ad7f4eb0246a05300ecbc, type: 3}
+    - {fileID: 8300000, guid: e3d52ed46aa9ccd4e83be104ff1303f5, type: 3}
+    - {fileID: 8300000, guid: 99c3db1aa1f2e5043bc62fa87d5d1709, type: 3}
+    - {fileID: 8300000, guid: 6ce1d38e9c7669c4da79b1801b3b2e15, type: 3}
+    - {fileID: 8300000, guid: e0a2f87f6a24141489233b75eaa29bc0, type: 3}
+    volume: 0.22
+    pitchVariation: 0.01
+  - sound: 1
+    clips:
+    - {fileID: 8300000, guid: 0ec3ffcab6336794faffda1c6dc6a551, type: 3}
+    volume: 0.3
+    pitchVariation: 0.025
+  - sound: 2
+    clips:
+    - {fileID: 8300000, guid: cfa944c0a1969674cb0154ec32a4c99b, type: 3}
+    volume: 0.46
+    pitchVariation: 0
+  - sound: 3
+    clips:
+    - {fileID: 8300000, guid: 2c31c36c3ea91e14c998e25f2dbf9e25, type: 3}
+    volume: 0.48
+    pitchVariation: 0
+  - sound: 4
+    clips:
+    - {fileID: 8300000, guid: fa9fc17362e51bd4e924cf48bb8899c6, type: 3}
+    volume: 0.62
+    pitchVariation: 0.025
+  - sound: 5
+    clips:
+    - {fileID: 8300000, guid: f93d261080cf10640a7b0ea3670f6003, type: 3}
+    volume: 0.12
+    pitchVariation: 0
+  - sound: 6
+    clips:
+    - {fileID: 8300000, guid: a43400276ae12b24b83d8ae939cc4238, type: 3}
+    volume: 0.46
+    pitchVariation: 0.025
+  - sound: 7
+    clips:
+    - {fileID: 8300000, guid: 01044682eeaffcf4ca291baa42c778af, type: 3}
+    volume: 0.57
+    pitchVariation: 0.025
+  - sound: 8
+    clips:
+    - {fileID: 8300000, guid: a916c0c058cba9749baee3ef8e459320, type: 3}
+    volume: 0.42
+    pitchVariation: 0.025
+  - sound: 9
+    clips:
+    - {fileID: 8300000, guid: 87fff451af1ffa449b22ac3cc8a2d389, type: 3}
+    volume: 0.55
+    pitchVariation: 0.025
+  - sound: 10
+    clips:
+    - {fileID: 8300000, guid: 0eeee4de9a90deb4bbc9db5444721d7b, type: 3}
+    volume: 0.4
+    pitchVariation: 0.025
+  - sound: 11
+    clips:
+    - {fileID: 8300000, guid: f29057bfcc0f6cc429c294cd4e617662, type: 3}
+    volume: 0.46
+    pitchVariation: 0.025
+  - sound: 12
+    clips:
+    - {fileID: 8300000, guid: 6dc57d9b3da74114da87570f8886e07b, type: 3}
+    volume: 0.4
+    pitchVariation: 0.025
+  - sound: 13
+    clips:
+    - {fileID: 8300000, guid: a774df19fd9a01b49999f4358f8ba010, type: 3}
+    volume: 0.38
+    pitchVariation: 0.025
+  - sound: 14
+    clips:
+    - {fileID: 8300000, guid: a6f11821e7d014d4484ab6a56f6ef65e, type: 3}
+    volume: 0.64
+    pitchVariation: 0.025
+  - sound: 15
+    clips:
+    - {fileID: 8300000, guid: 6036b73863944fd4f8a20ac1a7cf7c08, type: 3}
+    volume: 0.42
+    pitchVariation: 0

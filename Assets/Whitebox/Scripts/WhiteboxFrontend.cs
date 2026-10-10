@@ -20,11 +20,13 @@ namespace VectorWhitebox
 
         static WhiteboxFrontend endingInstance;
         Font runtimeFont;
+        string statusChinese, statusEnglish;
         public static bool IsEndingOpen => endingInstance && endingInstance.isActiveAndEnabled;
 
         void Awake()
         {
             if (!Application.isPlaying) return;
+            ConfigureLocalization();
             EnsureEventSystem();
             if (useRuntimeCjkFont)
             {
@@ -50,6 +52,56 @@ namespace VectorWhitebox
             if (returnMainButton) returnMainButton.onClick.AddListener(ReturnToMainMenu);
         }
 
+        void OnEnable()
+        {
+            WhiteboxLocalization.LanguageChanged += RefreshLocalizedText;
+            if (Application.isPlaying) RefreshLocalizedText();
+        }
+
+        void OnDisable() { WhiteboxLocalization.LanguageChanged -= RefreshLocalizedText; }
+
+        /// <summary>Configures labels without replacing their layout or a designer's existing bilingual strings.</summary>
+        public void ConfigureLocalization()
+        {
+            BindText(titleText, mode == ScreenMode.MainMenu ? "Rotcev" : "游戏结束", mode == ScreenMode.MainMenu ? "Rotcev" : "Game Complete");
+            BindText(subtitleText, mode == ScreenMode.MainMenu ? "vector lab" : "所有试验已完成", mode == ScreenMode.MainMenu ? "vector lab" : "All tests completed");
+            BindButton(startButton, "开始游戏", "Start Game");
+            BindButton(continueButton, "继续游戏", "Continue");
+            BindButton(settingsButton, "设置", "Settings");
+            BindButton(quitButton, "退出游戏", "Quit Game");
+            BindButton(returnMainButton, "返回主菜单", "Main Menu");
+        }
+
+        static void BindButton(Button button, string chinese, string english)
+        {
+            if (button) BindText(button.GetComponentInChildren<Text>(true), chinese, english);
+        }
+
+        static void BindText(Text text, string chinese, string english)
+        {
+            if (!text) return;
+            var localized = text.GetComponent<LocalizedUiText>();
+            if (!localized)
+            {
+                string originalText = text.text;
+                localized = text.gameObject.AddComponent<LocalizedUiText>();
+                localized.target = text;
+                localized.chinese = string.IsNullOrEmpty(originalText) ? chinese : originalText;
+                localized.english = localized.chinese == chinese ? english : localized.chinese;
+            }
+            localized.Refresh();
+        }
+
+        void RefreshLocalizedText()
+        {
+            foreach (var text in GetComponentsInChildren<LocalizedUiText>(true)) text.Refresh();
+            if (mode == ScreenMode.MainMenu)
+            {
+                if (statusChinese != null) SetStatus(statusChinese, statusEnglish);
+                else RefreshSaveStatus();
+            }
+        }
+
         void Update()
         {
             bool busy = SceneFadeTransition.IsTransitioning;
@@ -65,12 +117,14 @@ namespace VectorWhitebox
 
         public void RefreshSaveStatus()
         {
+            statusChinese = statusEnglish = null;
             bool available = WhiteboxSaveGame.TryGetSavedProgress(out var progress)
-                && Application.CanStreamedLevelBeLoaded(progress.sceneName);
+                && Application.CanStreamedLevelBeLoaded(progress.sceneName)
+                && LevelUnlockProgress.IsUnlocked(progress.sceneName);
             if (continueButton) continueButton.gameObject.SetActive(available);
             if (!statusText) return;
             statusText.text = available
-                ? "最近存档：" + SceneFadeTransition.GetSceneTitle(progress.sceneName) + (progress.finished ? " · 已完成" : "")
+                ? WhiteboxLocalization.Format("最近存档：{0}{1}", "Last save: {0}{1}", SceneFadeTransition.GetSceneTitle(progress.sceneName), progress.finished ? WhiteboxLocalization.Text(" · 已完成", " · Completed") : "")
                 : "";
         }
 
@@ -78,7 +132,7 @@ namespace VectorWhitebox
         {
             if (mode != ScreenMode.MainMenu || SceneFadeTransition.IsTransitioning) return;
             if (!Application.CanStreamedLevelBeLoaded(WhiteboxSaveGame.FirstLevelScene))
-            { SetStatus("第一关未加入构建列表。"); return; }
+            { SetStatus("第一关未加入构建列表。", "Level 1 is missing from the build list."); return; }
             WhiteboxSaveGame.StartNewGame();
             Time.timeScale = 1;
             Time.fixedDeltaTime = .02f;
@@ -90,7 +144,7 @@ namespace VectorWhitebox
             if (mode != ScreenMode.MainMenu || SceneFadeTransition.IsTransitioning) return;
             string scene = WhiteboxSaveGame.RequestContinue();
             if (string.IsNullOrEmpty(scene))
-            { RefreshSaveStatus(); SetStatus("没有可继续的存档。"); return; }
+            { RefreshSaveStatus(); SetStatus("没有可继续的存档。", "No saved game is available."); return; }
             Time.timeScale = 1;
             Time.fixedDeltaTime = .02f;
             SceneFadeTransition.Travel(scene);
@@ -103,7 +157,11 @@ namespace VectorWhitebox
             if (menuRoot) menuRoot.SetActive(false);
         }
 
-        void SetStatus(string message) { if (statusText) statusText.text = message; }
+        void SetStatus(string chinese, string english)
+        {
+            statusChinese = chinese; statusEnglish = english;
+            if (statusText) statusText.text = WhiteboxLocalization.Text(chinese, english);
+        }
 
         public void ReturnToMainMenu() { GoToMainMenu(); }
 
@@ -193,9 +251,9 @@ namespace VectorWhitebox
             var content = new GameObject("Menu Content", typeof(RectTransform));
             content.transform.SetParent(panel.transform, false);
             Center((RectTransform)content.transform, new Vector2(430, 500), new Vector2(-290, 0));
-            var title = MakeText("Title", content.transform, screenMode == ScreenMode.MainMenu ? "VECTOR" : "游戏结束", 42, TextAnchor.MiddleLeft);
+            var title = MakeText("Title", content.transform, screenMode == ScreenMode.MainMenu ? "Rotcev" : "游戏结束", 42, TextAnchor.MiddleLeft);
             Center(title.rectTransform, new Vector2(430, 62), new Vector2(0, 197));
-            var subtitle = MakeText("Subtitle", content.transform, screenMode == ScreenMode.MainMenu ? "方向试验场" : "所有试验已完成", 22, TextAnchor.MiddleLeft);
+            var subtitle = MakeText("Subtitle", content.transform, screenMode == ScreenMode.MainMenu ? "vector lab" : "所有试验已完成", 22, TextAnchor.MiddleLeft);
             Center(subtitle.rectTransform, new Vector2(430, 40), new Vector2(0, 142));
             var buttons = new GameObject("Buttons", typeof(RectTransform), typeof(VerticalLayoutGroup), typeof(ContentSizeFitter));
             buttons.transform.SetParent(content.transform, false);
@@ -226,6 +284,8 @@ namespace VectorWhitebox
             }
             frontend.statusText = MakeText("Save Status", content.transform, "", 17, TextAnchor.MiddleLeft);
             Center(frontend.statusText.rectTransform, new Vector2(430, 62), new Vector2(0, -206));
+            frontend.ConfigureLocalization();
+            LaboratoryFrontendStyle.Apply(frontend);
             root.SetActive(true);
             return frontend;
         }
